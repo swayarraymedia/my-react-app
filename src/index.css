@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkcyan;
+}
+
+.to-do-list {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.app-hdr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-hdr img {
+  height: 4rem;
+  margin-right: 2rem;
+}
+
+h1 {
+  font-size: 4rem;
+  color: antiquewhite;
+}
+
+button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+input {
+  height: 1.4rem;
+}
+
+.add-button {
+  font-size: 2.25rem;
+  padding: 0 12px;
+  background-color: hsl(180, 45%, 23%);
+}
+
+.add-button:hover {
+  background-color: hsl(180, 91%, 48%);
+}
+
+.delete-button {
+  border: solid 1px grey;
+}
+
+.delete-button:hover {
+  background-color: hsl(0, 0%, 73%);
+}
+
+.move-button {
+  border: solid 1px grey;
+}
+
+.move-button:hover {
+  background-color: hsl(0, 0%, 73%);
+}
+
+input[type="text"] {
+  height: 3rem;
+  font-size: 1.6rem;
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  color: black;
+}
+
+ol {
+  padding: 0;
+}
+
+li {
+  width: 90vw;
+  margin: auto;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  background-color: beige;
+  margin-bottom: 10px;
+  border: 3px solid gray;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  flex: 1; /*grow shrink basis */
+}
+
+.delete-button, .move-button {
+  padding: 8px 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
